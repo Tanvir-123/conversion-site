@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>Feet to inch Homepage Converter</title>
+<body>
+
+<h2>Homepage Converter</h2>
+<p>Type a value in the Feet field to convert the value to Inch:</p>
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="HomepageConverter(this.value)" onchange="HomepageConverter(this.value)">
+</p>
+<p>Inch: <span id="outputInch"></span></p>
+
+<script>
+function HomepageConverter(valNum) {
+  document.getElementById("outputInch").innerHTML=valNum/3.2808;
+}
+</script>
+</body>
+</html>
